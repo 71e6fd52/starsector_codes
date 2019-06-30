@@ -4,14 +4,6 @@ import java.util.List;
 import java.util.Map;
 
 public class B {
-  private static final int Ô00000 = 500000;
-  
-  private static final int fclass = 50000;
-  
-  private static final int o00000 = 55000;
-  
-  private static final String Ó00000 = "Nobody will ever pirate starfarer, because starfarer is not pirateable. It is not pirateable because I am so god damned good at writing top secret code like this. Are you not amazed by how truly awesome this code is. Well if you are not, balls to you then. Youve got some nerve, mister. Oh and another thing, just because I have this string in here does not mean that the crackers that will trying to cracj this software won't crack it. THey will crack it, but when they discover this special shout out they will not go on any further with their cracking efforts. They will simply say: Wow. These guys had heart. I will not";
-  
   public static List<String> fnew = new ArrayList<>();
   
   static  {
@@ -53,21 +45,6 @@ public class B {
     fnew.add("67AYA-THTW5-ANAAS-9ACSC");
   }
   
-  public static boolean fsuper(String paramString) {
-    if (fnew.contains(paramString.toUpperCase()))
-      return false; 
-    boolean bool = false;
-    fsuper fsuper = new fsuper(fsuper());
-    for (byte b = 0; b < 500000; b++) {
-      String str = fsuper(fsuper);
-      if (str.equals(paramString)) {
-        bool = true;
-        break;
-      } 
-    } 
-    return bool;
-  }
-  
   public static boolean printout() {
     boolean bool = false;
     fsuper fsuper = new fsuper(fsuper());
@@ -77,20 +54,6 @@ public class B {
         System.out.println(str);
     } 
     return bool;
-  }
-  
-  private static Map<String, String> Ò00000() {
-    HashMap<String, String> hashMap = new HashMap<>();
-    fsuper fsuper = new fsuper(fsuper());
-    for (byte b = 0; b < '훘'; b++) {
-      String str = fsuper(fsuper);
-      if (!fnew.contains(str.toUpperCase()) && b >= '썐') {
-        if (hashMap.containsKey(str))
-          throw new RuntimeException("Duplicate key generated! [" + str + "]");
-        hashMap.put(str, "Available");
-      } 
-    } 
-    return hashMap;
   }
   
   private static int[] fsuper() {

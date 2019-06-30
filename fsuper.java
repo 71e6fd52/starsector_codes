@@ -1,53 +1,11 @@
-import java.io.Serializable;
-
-public class fsuper implements Serializable {
-  private static final int Ø00000 = 624;
-  
-  private static final int õ00000 = 397;
-  
-  private static final int Ô00000 = -1727483681;
-  
-  private static final int Ö00000 = -2147483648;
-  
-  private static final int OO0000 = 2147483647;
-  
-  private static final int Ó00000 = -1658038656;
-  
-  private static final int fnew = -272236544;
-  
+public class fsuper {
   private int[] o00000;
   
   private int ffloat;
   
   private int[] ö00000;
   
-  private double fclass;
-  
   private boolean fnull;
-  
-  public boolean o00000(Object paramObject) {
-    if (paramObject == this)
-      return true; 
-    if (paramObject == null || !(paramObject instanceof fsuper))
-      return false; 
-    fsuper super1 = (fsuper)paramObject;
-    if (this.ffloat != super1.ffloat)
-      return false; 
-    byte b;
-    for (b = 0; b < this.ö00000.length; b++) {
-      if (this.ö00000[b] != super1.ö00000[b])
-        return false; 
-    } 
-    for (b = 0; b < this.o00000.length; b++) {
-      if (this.o00000[b] != super1.o00000[b])
-        return false; 
-    } 
-    return true;
-  }
-  
-  public fsuper() { this(System.currentTimeMillis()); }
-  
-  public fsuper(long paramLong) { o00000(paramLong); }
   
   public fsuper(int[] paramArrayOfInt) { o00000(paramArrayOfInt); }
   
@@ -96,31 +54,6 @@ public class fsuper implements Serializable {
     this.o00000[0] = Integer.MIN_VALUE;
   }
   
-  public final int o00000() {
-    if (this.ffloat >= 624) {
-      int[] arrayOfInt1 = this.o00000;
-      int[] arrayOfInt2 = this.ö00000;
-      byte b;
-      for (b = 0; b < 'ã'; b++) {
-        int j = arrayOfInt1[b] & 0x80000000 | arrayOfInt1[b + 1] & 0x7FFFFFFF;
-        arrayOfInt1[b] = arrayOfInt1[b + 'ƍ'] ^ j >>> 1 ^ arrayOfInt2[j & 1];
-      } 
-      while (b < 'ɯ') {
-        int j = arrayOfInt1[b] & 0x80000000 | arrayOfInt1[b + 1] & 0x7FFFFFFF;
-        arrayOfInt1[b] = arrayOfInt1[b + -227] ^ j >>> 1 ^ arrayOfInt2[j & 1];
-        b++;
-      } 
-      int i = arrayOfInt1[623] & 0x80000000 | arrayOfInt1[0] & 0x7FFFFFFF;
-      arrayOfInt1[623] = arrayOfInt1[396] ^ i >>> 1 ^ arrayOfInt2[i & 1];
-      this.ffloat = 0;
-    } 
-    int fnull = this.o00000[this.ffloat++];
-    fnull ^= fnull >>> 11;
-    fnull ^= fnull << 7 & 0x9D2C5680;
-    fnull ^= fnull << 15 & 0xEFC60000;
-    return fnull >>> 18;
-  }
-  
   public final int o00000(int paramInt) {
     int j;
     int i;
@@ -148,7 +81,7 @@ public class fsuper implements Serializable {
       i ^= i << 7 & 0x9D2C5680;
       i ^= i << 15 & 0xEFC60000;
       i ^= i >>> 18;
-      return (int)(paramInt * (i >>> 1) >> 31);
+      return (paramInt * (i >>> 1) >> 31);
     } 
     do {
       if (this.ffloat >= 624) {
