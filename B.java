@@ -80,7 +80,7 @@ public class B {
   }
   
   private static Map<String, String> Ò00000() {
-    HashMap hashMap = new HashMap();
+    HashMap<String, String> hashMap = new HashMap<>();
     fsuper fsuper = new fsuper(fsuper());
     for (byte b = 0; b < '훘'; b++) {
       String str = fsuper(fsuper);
