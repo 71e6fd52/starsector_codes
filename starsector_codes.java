@@ -47,6 +47,8 @@ class StarsectorCodes {
       String str = codes.next_code();
       if (!blacklist.contains(str))
         System.out.println(str);
+      if (System.out.checkError())
+        return;
     }
   }
 }
